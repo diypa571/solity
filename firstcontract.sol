@@ -6,7 +6,7 @@ contract Bank {
     int bal;
     constructor() 
     {
-        bal = 10;
+        bal = 1;
     }
     
 
@@ -23,9 +23,9 @@ function withdraw() public
 }
 
 
-function deposit(int amt)  public 
+function deposit(int am) view  public 
 {
-    bal + bal + amt;
+    bal + bal + am;
 } 
 
 
