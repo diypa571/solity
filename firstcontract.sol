@@ -1,6 +1,24 @@
-pragma solidity 0.8.4;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.4.16 <0.9.0;
+
+contract SimpleStorage {
+    uint storedData;
+
+    function set(uint x) public {
+        storedData = x;
+    }
+
+    function get() public view returns (uint) {
+        return storedData;
+    }
+}
+
+
+
+/*pragma solidity >=0.4.16 <0.8.0;
  
 contract Bank {
+    
     
  int amt;
     int bal;
@@ -16,17 +34,19 @@ function getBalance() view public returns(int)
 }
 
 
+ 
 
-function withdraw() public
+
+function withdraw(int) public
 {
     bal = bal - amt;
 }
 
 
-function deposit(int am) view  public 
+function deposit(int) view public
 {
-    bal + bal + am;
+    bal + bal + amt;
 } 
 
 
-}
+}*/
